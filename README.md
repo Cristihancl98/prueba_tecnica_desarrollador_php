@@ -4,7 +4,7 @@
 
 2) en proyecto estara un archivo .sql que podran importar en su gestor de base de datos o simplemente copia este codigo sql
 
-CREATE DATABASE bd_nubeico;
+```CREATE DATABASE bd_nubeico;
 USE bd_nubeico;
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -31,7 +31,7 @@ CREATE TABLE task_user (
     PRIMARY KEY (user_id, task_id),
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     FOREIGN KEY (task_id) REFERENCES tasks(id) ON DELETE CASCADE
-);
+);```
 
 3) luego de importar o ejecutar el codigo sql ingresan a la ruta http://localhost/prueba_tecnica_desarrollador_php/
 4) inician sesion con el user: cristihan.cl98@gmail.com y password: cris123456
